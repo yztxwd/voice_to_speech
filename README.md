@@ -2,7 +2,7 @@
 
 Simply invoke whisper and GPT to transcribe an audio file into text, then summarize into text
 
-## Insatllation
+## Installation
 
 ```bash
 pip install git+https://github.com/yztxwd/voice_to_speech.git
