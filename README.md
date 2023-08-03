@@ -20,6 +20,18 @@ Tiny whisper model on example audio file
 voice_to_speech -m tiny -a $OPENAI_API_KEY -o $ORGANIZATION_ID data/audio.mp3
 ```
 
+with MPS accelerator (M-chip):
+
+```bash
+voice_to_speech -m tiny -a $OPENAI_API_KEY -o $ORGANIZATION_ID data/audio.mp3 --device mps
+```
+
+with CUDA (Nivida):
+
+```bash
+voice_to_speech -m tiny -a $OPENAI_API_KEY -o $ORGANIZATION_ID data/audio.mp3 --device cuda:0
+```
+
 if you only have video file, use ffmpeg to extract audio, for example:
 ```bash
 # re-encoding depends on the audio format in video
