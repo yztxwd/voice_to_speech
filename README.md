@@ -23,13 +23,13 @@ voice_to_speech -m tiny -a $OPENAI_API_KEY -o $ORGANIZATION_ID data/audio.mp3
 with MPS accelerator (M-chip):
 
 ```bash
-voice_to_speech -m tiny -a $OPENAI_API_KEY -o $ORGANIZATION_ID data/audio.mp3 --device mps
+voice_to_speech -m tiny -a $OPENAI_API_KEY -o $ORGANIZATION_ID --device mps data/audio.mp3 
 ```
 
 with CUDA (Nivida):
 
 ```bash
-voice_to_speech -m tiny -a $OPENAI_API_KEY -o $ORGANIZATION_ID data/audio.mp3 --device cuda:0
+voice_to_speech -m tiny -a $OPENAI_API_KEY -o $ORGANIZATION_ID --device cuda:0 data/audio.mp3 
 ```
 
 if you only have video file, use ffmpeg to extract audio, for example:
