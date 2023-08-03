@@ -1,6 +1,6 @@
 # voice to speech
 
-Transcribe an audio file into text, then summarize
+Transcribe an audio file into text, then summarize into text
 
 ## Insatllation
 
