@@ -1,8 +1,8 @@
 # voice to speech
 
-Transcribe an audio file into text, then summarize
+Simply invoke whisper and GPT to transcribe an audio file into text, then summarize into text
 
-## Insatllation
+## Installation
 
 ```bash
 pip install git+https://github.com/yztxwd/voice_to_speech.git
@@ -10,10 +10,26 @@ pip install git+https://github.com/yztxwd/voice_to_speech.git
 
 ## Usage
 
+> You need an upgraded [OpenAI API](https://platform.openai.com/) account for using this repo
+> 
+> Go to settings for your `Organization ID`, and generate an API key at `API keys` (remember to COPY and SAVE IT!)
+
 Tiny whisper model on example audio file
 
 ```bash
 voice_to_speech -m tiny -a $OPENAI_API_KEY -o $ORGANIZATION_ID data/audio.mp3
+```
+
+with MPS accelerator (M-chip):
+
+```bash
+voice_to_speech -m tiny -a $OPENAI_API_KEY -o $ORGANIZATION_ID --device mps data/audio.mp3 
+```
+
+with CUDA (Nivida):
+
+```bash
+voice_to_speech -m tiny -a $OPENAI_API_KEY -o $ORGANIZATION_ID --device cuda:0 data/audio.mp3 
 ```
 
 if you only have video file, use ffmpeg to extract audio, for example:
