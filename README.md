@@ -1,6 +1,6 @@
 # voice to speech
 
-Transcribe an audio file into text, then summarize into text
+Simply invoke whisper and GPT to transcribe an audio file into text, then summarize into text
 
 ## Insatllation
 
