@@ -11,6 +11,7 @@ pip install git+https://github.com/yztxwd/voice_to_speech.git
 ## Usage
 
 > You need an upgraded [OpenAI API](https://platform.openai.com/) account for using this repo
+> 
 > Go to settings for your `Organization ID`, and generate an API key at `API keys` (remember to COPY and SAVE IT!)
 
 Tiny whisper model on example audio file
