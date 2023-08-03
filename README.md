@@ -26,7 +26,7 @@ with MPS accelerator (M-chip):
 voice_to_speech -m tiny -a $OPENAI_API_KEY -o $ORGANIZATION_ID --device mps data/audio.mp3 
 ```
 
-with CUDA (Nivida):
+with CUDA (Nvidia):
 
 ```bash
 voice_to_speech -m tiny -a $OPENAI_API_KEY -o $ORGANIZATION_ID --device cuda:0 data/audio.mp3 
