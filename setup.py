@@ -39,7 +39,7 @@ setup(
     ],
     #scripts=["voice_to_speech.py"],
     entry_points={
-        "console_scripts": ["voice_to_speech = voice_to_speech:main"],
+        "console_scripts": ["voice_to_speech = voice_to_speech.core:main"],
     },
     # The description that will be shown on PyPI.
     # Keep it short and concise
